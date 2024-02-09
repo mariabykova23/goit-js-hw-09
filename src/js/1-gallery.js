@@ -104,3 +104,8 @@ const lightbox = new SimpleLightbox(".gallery a",{
   
 
 lightbox.on("show.simplelightbox");
+
+
+containerSrc.addEventListener("click", event=>{
+  event.preventDefault();
+})
