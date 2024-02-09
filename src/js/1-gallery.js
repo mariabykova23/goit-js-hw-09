@@ -102,6 +102,7 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: 'alt',
   captionDelay: 250,
   captionsPosition: 'bottom',
+  animationSpeed:50,
 });
 
 lightbox.on("show.simplelightbox");
