@@ -1,5 +1,8 @@
 "use strict";
 
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -94,10 +97,8 @@ function createListofImages() {
 
 createListofImages();
 
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const lightbox = new SimpleLightbox(".gallery-image");
+const lightbox = new SimpleLightbox(".gallery a");
   
 
 lightbox.on("show.simplelightbox");
