@@ -2,7 +2,7 @@ ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 }
 
 body {
@@ -11,8 +11,8 @@ body {
 }
 
 a {
-  color:blueviolet;
+  color: blueviolet;
   text-decoration: none;
-  border:1px solid black;
+  border: 1px solid black;
   padding: 5px;
 }

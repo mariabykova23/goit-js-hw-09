@@ -97,13 +97,12 @@ function createListofImages() {
 
 createListofImages();
 
-const lightbox = new SimpleLightbox(".gallery a", {
+const lightbox = new SimpleLightbox('.gallery a', {
   close: true,
   captionsData: 'alt',
   captionDelay: 250,
   captionsPosition: 'bottom',
-  animationSpeed:50,
-  // sourceAttr:'dataset.source',
+  animationSpeed: 50,
 });
 
-lightbox.on("show.simplelightbox");
+lightbox.on('show.simplelightbox');
