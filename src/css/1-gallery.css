@@ -1,46 +1,43 @@
-ul{
-    list-style: none;
-    /* pointer-events: none; */
+ul {
+  list-style: none;
+  /* pointer-events: none; */
 }
 
-
-.gallery{
-    padding: 24px 156px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px 24px;
+.gallery {
+  padding: 24px 156px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px 24px;
 }
 
-.gallery-image{
-    transition: width 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+.gallery-image {
+  transition: width 1000ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: height 1000ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.gallery-image:hover{
-    width: 376px;
-    height: 208px;
-    
-}
-.gallery>li{
-    position: relative;
-    width: 376px;
-    height: 208px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery>li::after{
-    opacity: 0;
-    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: height 1000ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery>li:hover::after{
+.gallery-image:hover {
+  width: 376px;
+  height: 208px;
+}
+.gallery > li {
+  position: relative;
+  width: 376px;
+  height: 208px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery > li::after {
+  opacity: 0;
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery > li:hover::after {
   content: '';
   position: absolute;
   top: 92%;
@@ -49,15 +46,27 @@ ul{
   height: 44px;
   background-image: url('../img/bxs_hand-down.png');
   background-size: cover;
-  z-index: 3; 
+  z-index: 3;
   opacity: 1;
 }
 
-a{
-    cursor: none;
+a {
+  cursor: none;
 }
 
-.sl-wrapper{
-    background-color: #2E2F42CC;
+.sl-wrapper {
+  background-color: #2e2f42cc;
+}
 
+.go-back-link {
+  margin-top: 24px;
+  margin-left: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: blueviolet;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: 500;
+  font-size: large;
 }

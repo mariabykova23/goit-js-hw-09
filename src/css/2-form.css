@@ -57,7 +57,7 @@ textarea:focus {
 textarea {
   margin-top: 8px;
   height: 80px;
-  resize:none;
+  resize: none;
   padding: 8px 16px;
 }
 
@@ -74,11 +74,23 @@ input:hover,
 textarea:active,
 input:active,
 input:not(:focus),
-textarea:not(:focus){
+textarea:not(:focus) {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 4%;
-  color:#2E2F42;
+  color: #2e2f42;
 }
 
+.go-back-link {
+  margin-top: 24px;
+  margin-left: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: blueviolet;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: 500;
+  font-size: large;
+}
