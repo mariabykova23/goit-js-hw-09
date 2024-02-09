@@ -102,6 +102,8 @@ const lightbox = new SimpleLightbox(".gallery a",{
   close:true,
   captions:true,
   sourceAttr:original,
+  captionsData:alt,
+  captionDelay:250,
 });
   
 
