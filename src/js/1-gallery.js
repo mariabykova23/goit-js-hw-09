@@ -97,6 +97,11 @@ function createListofImages() {
 
 createListofImages();
 
-const lightbox = new SimpleLightbox(".gallery a");
+const lightbox = new SimpleLightbox(".gallery a", {
+  close: true,
+  captionData: "alt",
+  captionDelay: 250,
+  captionPosition: "bottom",
+});
 
 lightbox.on("show.simplelightbox");
