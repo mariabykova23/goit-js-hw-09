@@ -101,16 +101,7 @@ createListofImages();
 const lightbox = new SimpleLightbox(".gallery a",{
   close:true,
   captions:true,
-  sourceAttr:original,
-  captionsData:description,
-  captionDelay:250,
-  focus:true,
-  captionPosition:"bottom",
 });
   
 
 lightbox.on("show.simplelightbox");
-
-containerSrc.addEventListener('click', function (event) {
-  event.preventDefault();
-});
