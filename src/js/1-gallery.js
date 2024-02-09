@@ -99,9 +99,9 @@ createListofImages();
 
 const lightbox = new SimpleLightbox(".gallery a", {
   close: true,
-  captionData: "alt",
+  captionData: 'alt',
   captionDelay: 250,
-  captionPosition: "bottom",
+  captionPosition: 'bottom',
 });
 
 lightbox.on("show.simplelightbox");
