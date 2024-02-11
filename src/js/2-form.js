@@ -3,8 +3,6 @@
 const STORAGE_DATA_INPUT = 'feedback-form-state';
 
 const form = document.querySelector('.feedback-form');
-const email = form.querySelector('email');
-const textArea = form.querySelector('textarea');
 
 form.addEventListener('input', formInput);
 form.addEventListener('submit', formSubmit);
@@ -20,16 +18,16 @@ function formSubmit(event) {
     message,
   };
 
-  console.log(data);
-
   if (!email || !message) {
-    alert('Please fill both input forms');
     return;
   } else {
     localStorage.removeItem(STORAGE_DATA_INPUT);
     form.reset();
   }
+
+  console.log(data);
 }
+
 
 function formInput() {
   const email = form.elements.email.value.trim();
