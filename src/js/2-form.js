@@ -28,7 +28,6 @@ function formSubmit(event) {
   console.log(data);
 }
 
-
 function formInput() {
   const email = form.elements.email.value.trim();
   const message = form.elements.message.value.trim();
